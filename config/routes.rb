@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'lists' => 'lists#index'
 
-  get 'lists/:id' => 'lists#show'
+  get 'lists/:id' => 'lists#show', as: 'list'
 
   get 'lists/edit'
 
